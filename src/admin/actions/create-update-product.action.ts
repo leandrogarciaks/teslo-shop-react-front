@@ -64,6 +64,6 @@ export const uploadFiles = async (files: File[]) => {
     return data.fileName;
   });
 
-  const uploadFileNames = await Promise.all([]);
+  const uploadFileNames = await Promise.all(uploadPromises);
   return uploadFileNames;
 };

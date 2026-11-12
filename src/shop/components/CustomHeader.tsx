@@ -9,7 +9,7 @@ import { useAuthStore } from '@/auth/store/auth.store';
 
 export const CustomHeader = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const { user, logout, authStatus, isAdmin } = useAuthStore();
+  const { logout, authStatus, isAdmin } = useAuthStore();
   const { gender } = useParams();
   //console.log({ gender });
 

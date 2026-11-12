@@ -8,7 +8,7 @@ export const AdminHeader: React.FC = () => {
   const { user } = useAuthStore();
   const inputRef = useRef<HTMLInputElement>(null);
   const navigate = useNavigate();
-  const [searchParams, setSearchParams] = useSearchParams();
+  const [searchParams] = useSearchParams();
   //console.log(inputRef.current?.value);
   let queryInput = searchParams.get('query');
   const location = useLocation();
